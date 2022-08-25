@@ -1381,6 +1381,10 @@ function events$1(ctx) {
     currentMode.mouseout(event);
   };
 
+  events$1.nina = function(event) {
+    currentMode.nina(event);
+  };
+
   events$1.touchstart = function(event) {
     // Prevent emulated mouse events because we will fully handle the touch here.
     // This does not stop the touch events from propogating to mapbox though.
